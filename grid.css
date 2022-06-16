@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: hsla(185, 14%, 17%, .225);
+    place-items: center;
+    min-height: 1000vh;
+}
+header{
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    
+}
+header a{
+    margin: 0 10rem 0 10rem;
+    text-decoration: none;
+    font-size: larger;
+    color: hsl(189, 91%, 30%);
+
+}
+header a:hover{
+    color: hsl(183, 48%, 76%);
+}
+main{
+    padding: 10rem;
+    display: grid;
+    gap: 10px;
+    width: 50%;
+    margin: 5rem auto;
+    
+    
+}
+main div{
+    padding: 2rem;
+    text-align: center;
+}
+.a{
+    background-color: red;
+    grid-area: 1 / 1/span 3 / span 3 ;
+
+}
+.b{
+    background-color: orange;
+    grid-area: 1 / 4/ span 3/ span 1;
+}
+.c{
+    background-color: green;
+    grid-area: 4/ 1/ span 7/ span 2 ;
+}
+.d{
+    background-color: blue;
+    grid-area: 4 / 3/ span 1/ span 2 ;
+}
+.e{
+    background-color: purple;
+    grid-area: 5/ 3/ span 6/ span 2 ;
+}
+
+@media screen and (max-width: 375px){
+    header{
+        width: 100%;
+        top: 0;
+        padding: 0;
+    }
+    header a{
+        margin: 40px;
+    }
+    main{
+        height: auto;
+        width: auto;
+        margin: auto;
+        justify-content: center;
+    }
+    
+}    

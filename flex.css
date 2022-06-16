@@ -1,0 +1,146 @@
+@media screen and (max-width: 1440px){
+    @font-face {
+        font-family: Big Shoulders Display;
+        src: url(fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+    }
+    @font-face {
+        font-family: lex;
+        src: url(fonts/LexendDeca-VariableFont_wght.ttf);
+    }
+    body{
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: hsl(0, 0%, 95%);
+    }
+    header{
+        background-color: hsl(0, 0%, 100%);
+        padding: 1.5rem;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        
+    }
+    header a{
+        margin: 0 5rem 0 5rem;
+        text-decoration: none;
+        font-size: larger;
+        color: hsl(189, 91%, 30%);
+    
+    }
+    header a:hover{
+        color: hsl(183, 48%, 76%);
+        
+    }
+    main{
+        padding: 10rem;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        max-height: 100%;
+        
+    }
+    main div{
+        padding: 6rem 4rem 4rem 5rem;
+        max-width: 10rem;
+        max-height:50%;
+        margin: 0;
+        flex: 1;
+        align-self: normal;
+        
+        
+    }
+  
+    h1{
+        text-transform: uppercase;
+        color: hsl(0, 0%, 95%);
+        font-family: Big Shoulders Display;
+        
+    }
+    p{
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: lex;
+        font-weight: 400px;
+        padding: 0 0 70px 0;
+    }
+    button{
+        background-color: hsl(0, 0%, 95%);
+        border: 2px solid hsl(0, 0%, 95%);
+        padding: 15px;
+        width: 8rem;
+        border-radius: 25px;
+        text-transform: capitalize;
+        cursor: pointer;
+        
+
+    }
+    button:hover{
+        color: hsl(0, 0%, 95%);
+        font-weight: 400px;
+        background-color: transparent;
+        
+        
+    }
+    button a:hover{
+        color: hsl(0, 0%, 95%);
+        font-weight: 400px;
+    }
+    .sedan{
+        
+        background-color: hsl(31, 77%, 52%);
+    }
+    .sedan button{
+        color: black;
+    }
+    .suv{
+        background-color: hsl(184, 100%, 22%);
+    }
+    .suv button{
+        color: black;
+    }
+    .lux{
+        background-color: hsl(179, 100%, 13%);
+    }
+    .lux button{
+        color: black;
+    }
+}
+@media screen and (max-width: 375px){
+    header{
+        width: 100%;
+        top: 0;
+        padding: 0;
+    }
+    header a{
+        margin: 40px;
+    }
+    main{
+        margin: 50px 50px 10px 50px;
+    }
+    main div{
+        max-width: 95%;
+        max-height: 338px;
+        padding: 50px 100px 50px 50px;
+        flex-wrap: nowrap;
+      
+    }
+    p{
+        font-size: 12px;
+        margin: auto;
+        height: 50px;
+        width: 100px;
+    }
+    button{
+        width: 80px;
+        font-size: 9px;
+        margin: 40px 0 0 0 ;
+        padding:  10px;
+    }
+       
+}
