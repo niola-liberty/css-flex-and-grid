@@ -33,40 +33,39 @@ header a:hover{
     color: hsl(183, 48%, 76%);
 }
 main{
-    padding: 10rem;
     display: grid;
+    grid-template-areas: 
+    'r r r r r y y'
+    'g g g b b b b'
+    'g g g p p p p'
+    ;
     gap: 10px;
+    text-align: center;
+    text-transform: capitalize;
     width: 50%;
-    margin: 5rem auto;
-    
+    margin: auto;
+        
     
 }
 main div{
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
 }
-.a{
-    background-color: red;
-    grid-area: 1 / 1/span 3 / span 3 ;
-
+.r{
+    grid-area: r;
+}
+.g{
+    grid-area: g;
+}
+.y{
+    grid-area: y;
 }
 .b{
-    background-color: orange;
-    grid-area: 1 / 4/ span 3/ span 1;
+    grid-area: b;
 }
-.c{
-    background-color: green;
-    grid-area: 4/ 1/ span 7/ span 2 ;
+.p{
+    grid-area: p;
 }
-.d{
-    background-color: blue;
-    grid-area: 4 / 3/ span 1/ span 2 ;
-}
-.e{
-    background-color: purple;
-    grid-area: 5/ 3/ span 6/ span 2 ;
-}
-
 @media screen and (max-width: 375px){
     header{
         width: 100%;
